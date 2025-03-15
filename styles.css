@@ -136,6 +136,32 @@ header img {
     section {
         padding: 20px;
     }
+
+    .project-card {
+        max-width: 600px;
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+
+    .project-image {
+        aspect-ratio: 16/9;
+    }
+
+    .projects {
+        padding: 10px 0;
+    }
+
+    .project-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-content p {
+        font-size: 0.85rem;
+    }
+
+    .tech-tag {
+        font-size: 0.75rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -151,6 +177,37 @@ header img {
     .skillImage {
         width: 90%;
         min-width: 200px;
+    }
+
+    .project-card {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+
+    .project-content {
+        padding: 15px;
+    }
+
+    .project-content h3 {
+        font-size: 1rem;
+    }
+
+    .project-content p {
+        display: none;
+    }
+
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+
+    .project-link {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .project-links {
+        margin: 10px 0;
     }
 }
 
@@ -240,4 +297,89 @@ iframe {
 
 .caption {
     text-align: center;
+}
+
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #70869D;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    color: white;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    margin: 15px 0;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ABCDED;
+    color: #1D1F20;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #00aced;
+    color: white;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tech-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
 }
