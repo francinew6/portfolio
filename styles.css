@@ -123,6 +123,33 @@ header img {
     .header-content p {
         font-size: 1rem;
     }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+
+    .skillImage {
+        width: 80%;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .classes {
+        margin: 10px;
+    }
+
+    .skillImage {
+        width: 100%;
+    }
 }
 
 footer {
@@ -182,11 +209,12 @@ iframe {
     background-color: #70869D;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-	width: calc(25% - 15px);
-	text-align: center;
-	border-radius: 16px;
-	overflow: hidden;
-    padding: 10px; 
+    width: calc(25% - 15px);
+    text-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 10px;
+    min-width: 250px;
 }
 
 .card ul {
