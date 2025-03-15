@@ -130,6 +130,7 @@ header img {
 
     .skillImage {
         width: 80%;
+        min-width: 250px;
     }
 
     section {
@@ -148,7 +149,8 @@ header img {
     }
 
     .skillImage {
-        width: 100%;
+        width: 90%;
+        min-width: 200px;
     }
 }
 
@@ -231,7 +233,9 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
 }
 
 .caption {
