@@ -72,7 +72,11 @@ body {
 .header-content {
     padding: 20px;
     max-width: 90%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .header-content h1 {
@@ -91,8 +95,10 @@ body {
 
 .header-content img {
     display: block;
-    margin: 20px auto 0;
-    width: 30%;
+    margin: 20px auto;
+    width: 70%;
+    max-width: 600px;
+    min-width: 300px;
     border-radius: 16px;
     border: 5px solid white;
 }
@@ -116,6 +122,11 @@ header img {
         gap: 15px;
         margin: 0;
         font-size: 0.9rem;
+    }
+
+    .header-content {
+        max-width: 100%;
+        padding: 10px;
     }
 
     .header-content h1 {
@@ -167,6 +178,11 @@ header img {
 
     iframe {
         height: 600px;
+    }
+
+    .header-content img {
+        width: 80%;
+        min-width: 280px;
     }
 }
 
@@ -229,6 +245,16 @@ header img {
 
     iframe {
         height: 500px;
+    }
+
+    .header-content {
+        padding: 5px;
+    }
+
+    .header-content img {
+        width: 90%;
+        min-width: 250px;
+        margin: 10px auto;
     }
 }
 
