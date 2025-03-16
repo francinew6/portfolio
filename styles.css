@@ -107,13 +107,15 @@ header img {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
         padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        margin: 0;
+        font-size: 0.9rem;
     }
 
     .header-content h1 {
@@ -162,9 +164,22 @@ header img {
     .tech-tag {
         font-size: 0.75rem;
     }
+
+    iframe {
+        height: 600px;
+    }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+
     .card {
         width: 100%;
         min-width: auto;
@@ -172,6 +187,8 @@ header img {
 
     .classes {
         margin: 10px;
+        padding: 0;
+        grid-template-columns: 1fr;
     }
 
     .skillImage {
@@ -209,6 +226,10 @@ header img {
     .project-links {
         margin: 10px 0;
     }
+
+    iframe {
+        height: 500px;
+    }
 }
 
 footer {
@@ -234,12 +255,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
 iframe {
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 800px;
     border: none;
+    max-width: 1000px;
 }
 
 #contact img {
@@ -255,25 +279,24 @@ iframe {
 }
 
 .classes {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    align-content: space-around;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     margin: 20px;
+    justify-items: center;
+    width: 100%;
 }
 
 .card {
     background-color: #70869D;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    width: calc(25% - 15px);
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     border-radius: 16px;
     overflow: hidden;
     padding: 10px;
-    min-width: 250px;
 }
 
 .card ul {
@@ -382,4 +405,72 @@ iframe {
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.8rem;
+}
+
+/* Home page specific layout */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Skills page specific layout */
+.skillSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.skill-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.classes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+/* Projects page specific layout */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .classes {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
