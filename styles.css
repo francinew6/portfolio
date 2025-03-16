@@ -207,15 +207,17 @@ header img {
         font-size: 0.8rem;
     }
 
-    .card {
-        width: 100%;
-        min-width: auto;
-    }
-
     .classes {
-        margin: 10px;
+        margin: 10px 0;
         padding: 0;
         grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+        min-width: auto;
+        margin: 0 auto;
     }
 
     .skillImage {
@@ -224,8 +226,8 @@ header img {
     }
 
     .project-card {
-        width: calc(100% - 20px);
-        margin: 0 10px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .project-content {
@@ -270,6 +272,12 @@ header img {
     .about-section .header-content img {
         width: 90%;
         min-width: 250px;
+    }
+
+    .projects {
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
     }
 }
 
@@ -323,7 +331,7 @@ iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
-    margin: 20px;
+    margin: 20px auto;
     justify-items: center;
     width: 100%;
 }
@@ -370,11 +378,12 @@ iframe {
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    justify-content: center;
     padding: 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .project-card {
