@@ -195,6 +195,23 @@ header img {
         width: 80%;
         min-width: 280px;
     }
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .classes {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -322,6 +339,15 @@ iframe {
     filter: brightness(0) invert(1);
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .skillSection {
     display: grid;
     grid-template-columns: 1fr;
@@ -385,15 +411,6 @@ iframe {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    padding: 20px;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .project-card {
@@ -467,7 +484,6 @@ iframe {
     font-size: 0.8rem;
 }
 
-/* Home page specific layout */
 .about-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -485,22 +501,4 @@ iframe {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        grid-template-columns: 1fr;
-    }
-
-    .skill-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .classes {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .projects {
-        grid-template-columns: 1fr;
-    }
 }
