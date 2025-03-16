@@ -323,8 +323,18 @@ iframe {
 }
 
 .skillSection {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 80px;
+}
+
+.skill-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
 }
 
 .classes {
@@ -334,6 +344,10 @@ iframe {
     margin: 20px auto;
     justify-items: center;
     width: 100%;
+}
+
+.skills {
+    padding: 20px;
 }
 
 .card {
@@ -352,10 +366,6 @@ iframe {
     text-align: left;
     margin: 0;
     padding-left: 20px;
-}
-
-.skills {
-    padding: 20px;
 }
 
 .skillImage {
@@ -474,36 +484,6 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-/* Skills page specific layout */
-.skillSection {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-.skill-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    padding: 20px;
-}
-
-.classes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin: 20px;
-}
-
-/* Projects page specific layout */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
     padding: 20px;
 }
 
