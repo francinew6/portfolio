@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francine Wei Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 </head>
 
 <body>
@@ -41,12 +47,18 @@
                 <img src="images/plane.jpg" alt="Francine Next to Plane">
             </div>
         </section>
+        <section class="map-section">
+            <h2 class="sectionheader">My Journey</h2>
+            <p>These are some of the most foundational places for me and my growth over the years! I'm very thankful for the opportunities and experiences I've had at each of these places!</p>
+            <div id="ncmap"></div>
+        </section>
         <section class="resume-section">
             <h2 class="sectionheader">Resume</h2>
             <p>Check out my resume below</p>
             <div class="resume">
-                <iframe class="pdf" src="resume.pdf" width="800" height="500">
-                </iframe>
+                <a href="resume.pdf" download class="download-button">
+                    Download Resume (PDF)
+                </a>
             </div>
         </section>
     </main>
@@ -56,6 +68,7 @@
         <a href="https://github.com/francinew6"><img src="images/github.png" alt="GitHub Logo"></a>
         <p>&copy; 2023 Francine Wei. All rights reserved.</p>
     </footer>
+    <script src="map.js"></script>
 </body>
 
 </html>
