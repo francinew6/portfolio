@@ -353,7 +353,7 @@ iframe {
 }
 
 .card {
-    background-color: #70869D;
+    background: #2c5282;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     width: 100%;
@@ -406,7 +406,7 @@ iframe {
 }
 
 .project-card {
-    background-color: #70869D;
+    background: #2c5282;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
